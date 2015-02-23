@@ -1,35 +1,44 @@
-FDOP guide
+CalMAPPER How To
 =============
-####*Fire Danger Operating Plan information & material*
 
-##What is a FDOP?
+##What is CalMAPPER?
 
-Fire Danger Operating Plan 
+CalMAPPER
  
-A fire danger operating plan is a fire danger rating applications guide for agency users at the 
-local level. A fire danger operating plan documents the establishment and management of the 
-local unit fire weather system and incorporates fire danger modeling into local unit fire 
-management decisions. Fire danger operating plans include but are not limited to responsible 
-parties (e.g. station maintenance, data entry); fire danger rating areas (e.g. location, development 
-criteria); NFDRS thresholds and breakpoints (e.g. staffing levels, adjective ratings, preparedness 
-levels, and indexes used for each); operational procedures; and Fire Danger PocketCards. 
+CalMAPPER is a tracking databse that CAL FIRE uses to record fuel reduction efforts within the units.  CalMAPPER records funding information (source, amount, grant IDs, etc.), treatment activity information (start/end dates, executing agency, costs, etc.), along with spatial representations of the treatments.  It is an evolving system and at SLU we incorporate various versions of CalMAPPER to produce several maps including a public facing map, print maps and PDFs for contractors and CCC crews, and a GDB for the pre-fire engineer to use to generate statistics and reports.  We use CalMAPPER v1.9 and v2.0 in order to accomplish this as v2.0 does not yet make a suitable replacement for the former ArcMap based versions.  Also by maintaining our data we are able to customize maps to suit specific needs with greater control.   
 
-source: http://fam.nwcg.gov/fam-web/pocketcards/master_gaining.pdf
+##CalMAPPER v1.9
 
-##Example FDOP's  
+X:\_projects\CalMapper\CalMapper_v1_9
 
-CAL FIRE SLU/San Luis Obispo County Fire https://dl.dropboxusercontent.com/u/345322813/docs/FDOP_2013_FinalProduct.pdf  
+Copy this folder to your local drive.  If there are broken links you can copy of=ver the rest of the CalMAPPER project folder and fix the links.
+
+##CalMAPPER v1.9 User Guide
+
+X:\_projects\CalMapper\CalMapper_v1_9\Documents\UserGuide_2014.pdf
+
+This guide will bring you up to speed on terms and field names and how to operate CalMAPPER v1.9.  The most important aspects about it will be creating relationships between projects, treatments, funding records, and activities.  To put it simply: A project is an arbitray area (we based ours off of watersheds but this is not done in other units) that must encompass all associated treatments;  Projects hold funding records that are then linked to individual treatment areas; Treatment Area + Funding Record = Activity.
 
 
-##Creating an FDOP
-###Getting Started###
+##Linking Records in CalMAPPER
 ---
-**1.	Download FireFamilyPlus from:**
+**1.	Receive data (spatial, funding, activity)**  
 
-http://www.firemodels.org/index.php/firefamilyplus-software/firefamilyplus-downloads
+Data about upcoming treatments tends to come from Alan or Greg.  The most important info for CalMAPPER besides the spatial data are the funding amount, dates the treatment was started and ended, what type of activity occurred, and who preformed the work on the ground.  
 
-**2.	Create a Database:**
-File> New> Name your Database and save it to an appropriate location> Give it a description.
+**2.	Put Data into CalMAPPER v1.9**  
+Copy and paste treatments into the Treatment Polygon feature class in CalMAPPER v1.9.  Name the treatment in its attribute table and save your edits.
+
+**3.	Relate Treatment Polygon to Project Polygon**  
+Select the new treatment and the project it falls into and select All Other Relationships under the Create Relationships toolbar.  This will link your treatment to your project and give your treatment a GUID.
+
+***If the treatment does not fall into a project polygon you will need to edit the nearest project polygon so that it includes the new treatment or if that is not optimal you will need to create a new project polygon by tracing the watershed boundary around it.  Once the new project polygon is created you need to give it a name (start each new project polygon name with 'SLU-'), select our Unit ID '3400', and then run the All Other Relationships tool.***
+
+**4.	Add Funding Record to Project**
+Although treatments are the records receiving funding, CalMAPPER v1.9 requires you to add funding records to projects first and then to treatments.  Select the project polygon that is linked to your treatment needing funding and select Add Funding under the Add Table Records toolbar.  Fundind records are held in a table only as they have no spatial data.  This table can be accessed by switching your table of contents view to View by Source and then opening the Funding attribute table.  Find your new record and include the amount, the funding agency, and a grant ID if any.
+
+**5.	Add Activity Records to Treatment+Funding Records**
+The last step is to add activity records that detail the type of work preformed in the treatment  (i.e. Chipping, Rx Burn, Shaded Fuelbreak, etc.).  Treatments can be composed of multiple activities but more often than not they are a single activity type.  Select the treatment and its corresponding funding record and then select Add Activity under the Add Table records toolbar.  Fill in the appropiate info for the activity and then save your edits.  
 
 ###Station Catalog###
 ---
