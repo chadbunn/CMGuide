@@ -11,7 +11,7 @@ CalMAPPER is a tracking databse that CAL FIRE uses to record fuel reduction effo
 
 X:\_projects\CalMapper\CalMapper_v1_9
 
-Copy this folder to your local drive.  If there are broken links you can copy of=ver the rest of the CalMAPPER project folder and fix the links.
+Copy this folder to your local drive.  If there are broken links you can copy over the rest of the CalMAPPER project folder and fix the links.
 
 ##CalMAPPER v1.9 User Guide
 
