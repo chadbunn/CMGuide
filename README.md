@@ -78,9 +78,9 @@ The SLU Treatments MapBox.js Map uses a shapefile created from the CalMAPPER dat
 X:\_projects\CalMapper\CalMAPPER_Mapbox	
 This file gets styled in TileMill into four layers based on status: Active, Complete, Planning, and Propsed.  This map also includes a chipping point layer that is an extract from the support points table in v1.9, and an SRA layer based off the most current SRA version.  When new treatments are added in CalMAPPER this .shp needs to be updated with all the new info (name, funding, executing agency, etc.).  There are columns for logo links that need to be updated as well.  All the logos are hosted on our Dropbox account.    
 
-**2.	Styling in TileMill**
+**2.	Styling & Processing in TileMill**
 
-
+The layers for the SLU Treatments MapBox.js Map are created in TileMill.  The styles are already set in their indivdual project's CartoCSS.  All that needs to be done is to export each project: Active_SLU, Complete_SLU, Planning_SLU, and Proposed_SLU as MB Tiles.  ALl layers are exported at zoom layers 8-17 and then are uploaded/updated to our MapBox account under the data tab.  This automatically updates the SLU Treatments MapBox.js map.  
 
 **3.	Missing Records:**
 
