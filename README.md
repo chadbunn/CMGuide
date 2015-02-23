@@ -40,17 +40,19 @@ Although treatments are the records receiving funding, CalMAPPER v1.9 requires y
 **5.	Add Activity Records to Treatment+Funding Records**
 The last step is to add activity records that detail the type of work preformed in the treatment  (i.e. Chipping, Rx Burn, Shaded Fuelbreak, etc.).  Treatments can be composed of multiple activities but more often than not they are a single activity type.  Select the treatment and its corresponding funding record and then select Add Activity under the Add Table records toolbar.  Fill in the appropiate info for the activity and then save your edits.  
 
-##CalMAPPER v2.0   
+##CalMAPPER v2.0
 ---
+CalMAPPER v2.0 has a Help guide that can be accessed from within the application.  Click on the '?' icon to see it.  It will teach you how to use CalMAPPER v2.0 but there are still some special issues with the application not included in it, see below:
+
 **1.	Accessing CalMAPPER v2.0**
 
 Connect to the state network via VPN.  To access CalMAPPER v2.0 you must use Internet Explorer 9.  To revert to this version open Internet Explorer,  click F12 and selct '9' under the screen icon (it should read Edge by default).  Now you can login to CalMAPPER v2.0.
 
 **2.	Uploading data into CalMAPPER**
 
-New treatment and project polygons are uploaded into CalMAPPER by using the ShapeUp tool.  You can draw new polygons in v2.0 but it is not accurate enough and not advised.  There are two versions on the ShapeUp tool: a standalone version and an ArcMap Add-In version.  For help installing the Add-In see the Help Guide in CalMAPPER v2.0.  Unfortunately both these versions are necessary as they both can handle different geometry types.  The tables below shows what each can handle:
+New treatment and project polygons are uploaded into CalMAPPER by using the ShapeUp tool.  You can draw new polygons in v2.0 but it is not accurate enough and not advised.  There are two versions on the ShapeUp tool: a standalone version and an ArcMap Add-In version.  For help installing the Add-In see the Help Guide in CalMAPPER v2.0.  Unfortunately, both these versions are necessary as they each can handle different geometry types.  The tables below shows what each can handle:
 
-###Standalone Version###
+###Version Comparison###
 
 |Version|Polygon|Multi-Polygon|Point|Multi-Point|Line
 |----------|-------|-------------|-----|-----------|-------
@@ -58,6 +60,10 @@ New treatment and project polygons are uploaded into CalMAPPER by using the Shap
 |Add-In    |   x   |       |  x    |  x    |  x
 
 The Add-In can also handle feature classes whereas the Standalone can only work with shapefiles.
+
+**3.	Unsubscribing From Projects**
+
+CalMAPPER v2.0 still has some serious bugs that can corrupt your credentials which can then only be reconciled from FRAP's end.  To avoid this terrible bug we have been advised to unsibscribe from projects before logging out.  You can find the Unsubscribe button at the top of a project's overview page.
 
 
 ###Weather###
