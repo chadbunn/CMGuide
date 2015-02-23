@@ -74,8 +74,9 @@ CalMAPPER v2.0 still has some serious bugs that can corrupt your credentials whi
 ---
 **1.	Update treatments_refined.shp**
 
-The SLU Treatments MapBox.js Map uses a shapefile created from the CalMAPPER database called 'treatments_refined.shp'.  It is found here:	
-X:\_projects\CalMapper\CalMAPPER_Mapbox	
+The [SLU Treatments MapBox.js map](http://slocountyfire.org/CalMAPPER/#10/35.4050/-120.5230/ "SLU Treatments") uses a shapefile created from the CalMAPPER database called 'treatments_refined.shp'.  It is found here:	
+X:\_projects\CalMapper\CalMAPPER_Mapbox 
+
 This file gets styled in TileMill into four layers based on status: Active, Complete, Planning, and Propsed.  This map also includes a chipping point layer that is an extract from the support points table in v1.9, and an SRA layer based off the most current SRA version.  When new treatments are added in CalMAPPER this .shp needs to be updated with all the new info (name, funding, executing agency, etc.).  There are columns for logo links that need to be updated as well.  All the logos are hosted on our Dropbox account.    
 
 **2.	Styling & Processing in TileMill**
