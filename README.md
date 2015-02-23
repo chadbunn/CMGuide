@@ -9,9 +9,9 @@ CalMAPPER is a tracking databse that CAL FIRE uses to record fuel reduction effo
 
 ##CalMAPPER v1.9
 
-X:\_projects\CalMapper\CalMapper_v1_9
+X:\_projects\CalMapper
 
-Copy this folder to your local drive.  If there are broken links you can copy over the rest of the CalMAPPER project folder and fix the links.
+Copy this folder to your local drive.  Use the CalMAPPER v1.9.mxd when adding/editing records.
 
 ##CalMAPPER v1.9 User Guide
 
@@ -40,20 +40,25 @@ Although treatments are the records receiving funding, CalMAPPER v1.9 requires y
 **5.	Add Activity Records to Treatment+Funding Records**
 The last step is to add activity records that detail the type of work preformed in the treatment  (i.e. Chipping, Rx Burn, Shaded Fuelbreak, etc.).  Treatments can be composed of multiple activities but more often than not they are a single activity type.  Select the treatment and its corresponding funding record and then select Add Activity under the Add Table records toolbar.  Fill in the appropiate info for the activity and then save your edits.  
 
-###Station Catalog###
+##CalMAPPER v2.0   
 ---
-**1.	Download station catalog information from:**
+**1.	Accessing CalMAPPER v2.0**
 
-https://fam.nwcg.gov/fam-web/kcfast/mnmenu.htm
+Connect to the state network via VPN.  To access CalMAPPER v2.0 you must use Internet Explorer 9.  To revert to this version open Internet Explorer,  click F12 and selct '9' under the screen icon (it should read Edge by default).  Now you can login to CalMAPPER v2.0.
 
-Select Weather> Station Catalog> Station Information> Select ‘Single Station’> Enter in Station ID> Select Output Destination to “Send file to FTP site”> Save .txt file to appropriate folder
+**2.	Uploading data into CalMAPPER**
 
-**2.	Importing the Station Catalog:**
+New treatment and project polygons are uploaded into CalMAPPER by using the ShapeUp tool.  You can draw new polygons in v2.0 but it is not accurate enough and not advised.  There are two versions on the ShapeUp tool: a standalone version and an ArcMap Add-In version.  For help installing the Add-In see the Help Guide in CalMAPPER v2.0.  Unfortunately both these versions are necessary as they both can handle different geometry types.  The tables below shows what each can handle:
 
-- On the Data menu> Select Import> Select WIMS Station Catalogs> Select the appropriate .txt file> 
-- From the Data menu> Select Stations> This will show you which stations are available for you to work with in the data base and you should see the station catalog you have just imported.  From this screen you can highlight your station and select ‘Edit’.  This will show you all the attributes of your station.
-    - **(You should make note of the USFS region – you will need to know that value for when you download your fire data).**     
-- In your working set dialog box under ‘SIG/Station’> Select your station from the drop down menu. 
+###Standalone Version###
+
+|Version|Polygon|Multi-Polygon|Point|Multi-Point|Line
+|----------|-------|-------------|-----|-----------|-------
+|Standalone|   x   |   x   |  x    |       |
+|Add-In    |   x   |       |  x    |  x    |  x
+
+The Add-In can also handle feature classes whereas the Standalone can only work with shapefiles.
+
 
 ###Weather###
 ---
