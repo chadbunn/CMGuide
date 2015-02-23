@@ -72,16 +72,15 @@ CalMAPPER v2.0 still has some serious bugs that can corrupt your credentials whi
 
 ###SLU Treatments MapBox.js Map
 ---
-**1.	Download weather data from:**
+**1.	Update treatments_refined.shp**
 
-https://fam.nwcg.gov/fam-web/kcfast/mnmenu.htm
+The SLU Treatments MapBox.js Map uses a shapefile created from the CalMAPPER database called 'treatments_refined.shp'.  It is found here:	
+X:\_projects\CalMapper\CalMAPPER_Mapbox	
+This file gets styled in TileMill into four layers based on status: Active, Complete, Planning, and Propsed.  This map also includes a chipping point layer that is an extract from the support points table in v1.9, and an SRA layer based off the most current SRA version.  When new treatments are added in CalMAPPER this .shp needs to be updated with all the new info (name, funding, executing agency, etc.).  There are columns for logo links that need to be updated as well.  All the logos are hosted on our Dropbox account.    
 
-- Select Weather> Data Extract> Historical> Enter in Station ID and date range> Select ‘Raw Datafile – 1998 Data Format> Save .fw9 file to appropriate folder. The file can be downloaded from either http://fam.nwcg.gov/fam-web/kcfast/batchout/?M=D or ftp://ftp2.fs.fed.us/incoming/wo_fam
+**2.	Styling in TileMill**
 
-**2.	Importing the  Weather Data:**
 
-- From the Data Menu> Select Import> Select Old Wx Import> The Selected Fields should include: Station ID, Obs Date, Obs Time, Obs Type, OMC10, RH, and Windspeed> Select the StationID Box> Select Overwrite Duplicates.  
-UPDATED: Select Data> Import> Generic Wx> upload your .fw9 files.
 
 **3.	Missing Records:**
 
