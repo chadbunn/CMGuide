@@ -32,13 +32,17 @@ Copy and paste treatments into the Treatment Polygon feature class in CalMAPPER 
 **3.	Relate Treatment Polygon to Project Polygon**  
 Select the new treatment and the project it falls into and select All Other Relationships under the Create Relationships toolbar.  This will link your treatment to your project and give your treatment a GUID.
 
-***If the treatment does not fall into a project polygon you will need to edit the nearest project polygon so that it includes the new treatment or if that is not optimal you will need to create a new project polygon by tracing the watershed boundary around it.  Once the new project polygon is created you need to give it a name (start each new project polygon name with 'SLU-'), select our Unit ID '3400', and then run the All Other Relationships tool.***
+***If the treatment does not fall into a project polygon you will need to edit the nearest project polygon so that it includes the new treatment or if that is not optimal you will need to create a new project polygon by tracing the watershed boundary around it.  Once the new project polygon is created you need to give it a name (start each new project polygon name with 'SLU-'), select our Unit ID '3400', and then run the All Other Relationships tool.  If you add a new project polygon you will need to upload it into CalMAPPER v2.0, but if you just edit it to fit the treatment inside of it you can make these edits in v2.0 instead of uploading a newer version.***
 
 **4.	Add Funding Record to Project**
 Although treatments are the records receiving funding, CalMAPPER v1.9 requires you to add funding records to projects first and then to treatments.  Select the project polygon that is linked to your treatment needing funding and select Add Funding under the Add Table Records toolbar.  Fundind records are held in a table only as they have no spatial data.  This table can be accessed by switching your table of contents view to View by Source and then opening the Funding attribute table.  Find your new record and include the amount, the funding agency, and a grant ID if any.
 
 **5.	Add Activity Records to Treatment+Funding Records**
 The last step is to add activity records that detail the type of work preformed in the treatment  (i.e. Chipping, Rx Burn, Shaded Fuelbreak, etc.).  Treatments can be composed of multiple activities but more often than not they are a single activity type.  Select the treatment and its corresponding funding record and then select Add Activity under the Add Table records toolbar.  Fill in the appropiate info for the activity and then save your edits.  
+
+**6.	Support Points for Chipping Events**
+
+SLU conducts several chipping events each year as well as maintains signs throughout the county about the dangers of wildland fire.  These points were once utilized by CalMAPPER in prevous versions as Support Points, but are no longer tracked in v2.0.  However, we still show them on our public facing [MapBox.js map](http://slocountyfire.org/CalMAPPER/#10/35.4050/-120.5230/ "SLU Treatments").  When a chipping event is completed there will be a collection of sign-up forms with address on it.  These need to then be geocoded and used to select their corresponding parcels.  These parcels become a multi-polygon treatment and the points are related to their corresponding project using the All Other Relationships tool under the Create Relationships toolbar.  
 
 ##CalMAPPER v2.0
 ---
@@ -66,7 +70,7 @@ The Add-In can also handle feature classes whereas the Standalone can only work 
 CalMAPPER v2.0 still has some serious bugs that can corrupt your credentials which can then only be reconciled from FRAP's end.  To avoid this terrible bug we have been advised to unsibscribe from projects before logging out.  You can find the Unsubscribe button at the top of a project's overview page.
 
 
-###Weather###
+###SLU Treatments MapBox.js Map
 ---
 **1.	Download weather data from:**
 
