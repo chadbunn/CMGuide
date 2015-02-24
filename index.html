@@ -33,7 +33,6 @@
 <div id="content" class="container">
 	<h1 id="calmapper-how-to">CalMAPPER How To</h1>
 <h2 id="what-is-calmapper">What is CalMAPPER?</h2>
-<p>CalMAPPER</p>
 <p>CalMAPPER is a tracking databse that CAL FIRE uses to record fuel reduction efforts within the units.  CalMAPPER records funding information (source, amount, grant IDs, etc.), treatment activity information (start/end dates, executing agency, costs, etc.), along with spatial representations of the treatments.  It is an evolving system and at SLU we incorporate various versions of CalMAPPER to produce several maps including a public facing map, print maps and PDFs for contractors and CCC crews, and a GDB for the pre-fire engineer to use to generate statistics and reports.  We use CalMAPPER v1.9 and v2.0 in order to accomplish this as v2.0 does not yet make a suitable replacement for the former ArcMap based versions.  Also by maintaining our data we are able to customize maps to suit specific needs with greater control.   </p>
 <h2 id="calmapper-v19">CalMAPPER v1.9</h2>
 <p>X:_projects\CalMapper</p>
@@ -44,7 +43,7 @@
 <h2 id="linking-records-in-calmapper">Linking Records in CalMAPPER</h2>
 <hr>
 <p><strong>1.    Receive data (spatial, funding, activity)</strong>  </p>
-<p>Data about upcoming treatments tends to come from Alan or Greg.  The most important info for CalMAPPER besides the spatial data are the funding amount, dates the treatment was started and ended, what type of activity occurred, and who preformed the work on the ground.  </p>
+<p>Data about upcoming treatments tends to come from the PFE or Unit Forester.  The most important info for CalMAPPER besides the spatial data are the funding amount, dates the treatment was started and ended, what type of activity occurred, and who preformed the work on the ground.  </p>
 <p><strong>2.    Put Data into CalMAPPER v1.9</strong><br>Copy and paste treatments into the Treatment Polygon feature class in CalMAPPER v1.9.  Name the treatment in its attribute table and save your edits.</p>
 <p><strong>3.    Relate Treatment Polygon to Project Polygon</strong><br>Select the new treatment and the project it falls into and select All Other Relationships under the Create Relationships toolbar.  This will link your treatment to your project and give your treatment a GUID.</p>
 <p><strong><em>If the treatment does not fall into a project polygon you will need to edit the nearest project polygon so that it includes the new treatment or if that is not optimal you will need to create a new project polygon by tracing the watershed boundary around it.  Once the new project polygon is created you need to give it a name (start each new project polygon name with &#39;SLU-&#39;), select our Unit ID &#39;3400&#39;, and then run the All Other Relationships tool.  If you add a new project polygon you will need to upload it into CalMAPPER v2.0, but if you just edit it to fit the treatment inside of it you can make these edits in v2.0 instead of uploading a newer version.</em></strong></p>
