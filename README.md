@@ -13,14 +13,14 @@ X:\_projects\CalMapper
 
 Copy this folder to your local drive.  Use the CalMAPPER v1.9.mxd when adding/editing records.
 
-##CalMAPPER v1.9 User Guide
+###CalMAPPER v1.9 User Guide
 
 X:\_projects\CalMapper\CalMapper_v1_9\Documents\UserGuide_2014.pdf
 
 This guide will bring you up to speed on terms and field names and how to operate CalMAPPER v1.9.  The most important aspects about it will be creating relationships between projects, treatments, funding records, and activities.  To put it simply: A project is an arbitray area (we based ours off of watersheds but this is not done in other units) that must encompass all associated treatments;  Projects hold funding records that are then linked to individual treatment areas; Treatment Area + Funding Record = Activity.
 
 
-##Linking Records in CalMAPPER
+###Linking Records in CalMAPPER
 ---
 **1.	Receive data (spatial, funding, activity)**  
 
@@ -74,7 +74,7 @@ The Add-In can also handle feature classes whereas the Standalone can only work 
 CalMAPPER v2.0 still has some serious bugs that can corrupt your credentials which can then only be reconciled from FRAP's end.  To avoid this terrible bug we have been advised to unsibscribe from projects before logging out.  You can find the Unsubscribe button at the top of a project's overview page.
 
 
-###SLU Treatments MapBox.js Map
+##SLU Treatments MapBox.js Map
 ---
 **1.	Update treatments_refined.shp**
 
