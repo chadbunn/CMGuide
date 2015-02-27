@@ -2,8 +2,6 @@ CalMAPPER How To
 =============
 
 ##What is CalMAPPER?
-
-CalMAPPER
  
 CalMAPPER is a tracking database that CAL FIRE uses to record fuel reduction efforts within the units.  CalMAPPER records funding information (source, amount, grant IDs, etc.), treatment activity information (start/end dates, executing agency, costs, etc.), along with spatial representations of the treatments.  It is an evolving system and at SLU we incorporate various versions of CalMAPPER to produce several maps including a public facing map, print maps and PDFs for contractors and CCC crews, and a GDB for the pre-fire engineer to use to generate statistics and reports.  We use CalMAPPER v1.9 and v2.0 in order to accomplish this as v2.0 does not yet make a suitable replacement for the former ArcMap based versions.  Also by maintaining our data we are able to customize maps to suit specific needs with greater control.   
 
